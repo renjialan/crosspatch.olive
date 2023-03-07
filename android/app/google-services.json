@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1069243076868",
+    "firebase_url": "https://crosspat-a9156-default-rtdb.firebaseio.com",
+    "project_id": "crosspat-a9156",
+    "storage_bucket": "crosspat-a9156.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069243076868:android:59e3300d9fcb8e6f3a4051",
+        "android_client_info": {
+          "package_name": "com.example.crosspat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1069243076868-17bhuvt6qf6j6h5untkkm8rcsfu05b1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChlR-XFN_LT8FyHxFEfnaK0o3QbtwSozY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1069243076868-17bhuvt6qf6j6h5untkkm8rcsfu05b1d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1069243076868-p7omd669cht700ih100kbfvqp3tu6i3g.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.crosspat"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

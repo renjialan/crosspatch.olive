@@ -1,0 +1,81 @@
+The process:
+
+Early Feb.
+Cannot install flutter on mac, flutter cannot find android java bundle. 
+solution: started developing on framework laptop fedora 37
+Did not know how to use zoom api
+solution: started watching Youtube video and follow along. Flutter & Firebase Course - Build a Full Stack Instagram Clone
+
+Feb. 20:
+Flutterfire configure failure, cannot locate path to flutterfire
+solution: instead of adding to bash shell, ran a line of code and it was all good
+
+Feb 21:
+Firebase was hard to navigate, took me a while to set up cloud, storage, authentication etc.
+watched tutorials and read documentations
+Feb 22:
+could not add svg image into assets, no solution yet. will figure out in future
+Emulator not working
+Faced problem: “Execution failed for task ':app:processDebugMainManifest'.
+> Manifest merger failed : uses-sdk:minSdkVersion 16 cannot be smaller than version 19 declared in library [:cloud_firestore] /home/oliveren/Flutter/crosspat/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml as the library might be using APIs not available in 16”
+
+solution: update something in build.gradle, encountered another problem, there was no default config in my build.gradle. 
+solution: there are two different build.gradles =^=, I knew this
+problem: Oops, after adding new apk settings to bild.gradle and running “flutter clean”, everything broke and showed: “get_dependencies” etc.. It was scary. My entire screen was red T^T
+Solution: I had to run “flutter pub get” after “flutter clean” to retrieve dependencies. Whew, I was scared for a moment.
+
+
+
+
+
+
+
+
+
+
+
+
+March 5:
+
+Restarted working on project. Decided to download source code of the tutorial on youtube and make changes. Quite challenging because I don’t really get how dart works yet. Right now there are some problems trying to run the code directly downloaded from github. Looks like some Gradle problems
+
+Problem log:
+Warning: Mapping new ns http://schemas.android.com/repository/android/common/02 to old ns http://schemas.android.com/repository/android/common/01
+Warning: Mapping new ns http://schemas.android.com/repository/android/generic/02 to old ns http://schemas.android.com/repository/android/generic/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/addon2/02 to old ns http://schemas.android.com/sdk/android/repo/addon2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/addon2/03 to old ns http://schemas.android.com/sdk/android/repo/addon2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/repository2/02 to old ns http://schemas.android.com/sdk/android/repo/repository2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/repository2/03 to old ns http://schemas.android.com/sdk/android/repo/repository2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/sys-img2/03 to old ns http://schemas.android.com/sdk/android/repo/sys-img2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/sys-img2/02 to old ns http://schemas.android.com/sdk/android/repo/sys-img2/01
+Warning: unexpected element (uri:"", local:"extension-level"). Expected elements are <{}codename>,<{}layoutlib>,<{}api-level>
+Warning: unexpected element (uri:"", local:"base-extension"). Expected elements are <{}codename>,<{}layoutlib>,<{}api-level>
+Checking the license for package Android SDK Build-Tools 28.0.3 in /home/oliveren/Android/Sdk/licenses
+License for package Android SDK Build-Tools 28.0.3 accepted.
+Preparing "Install Android SDK Build-Tools 28.0.3 (revision: 28.0.3)".
+"Install Android SDK Build-Tools 28.0.3 (revision: 28.0.3)" ready.
+Installing Android SDK Build-Tools 28.0.3 in /home/oliveren/Android/Sdk/build-tools/28.0.3
+"Install Android SDK Build-Tools 28.0.3 (revision: 28.0.3)" complete.
+"Install Android SDK Build-Tools 28.0.3 (revision: 28.0.3)" finished.
+Warning: Mapping new ns http://schemas.android.com/repository/android/common/02 to old ns http://schemas.android.com/repository/android/common/01
+Warning: Mapping new ns http://schemas.android.com/repository/android/generic/02 to old ns http://schemas.android.com/repository/android/generic/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/addon2/02 to old ns http://schemas.android.com/sdk/android/repo/addon2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/addon2/03 to old ns http://schemas.android.com/sdk/android/repo/addon2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/repository2/02 to old ns http://schemas.android.com/sdk/android/repo/repository2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/repository2/03 to old ns http://schemas.android.com/sdk/android/repo/repository2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/sys-img2/03 to old ns http://schemas.android.com/sdk/android/repo/sys-img2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/sys-img2/02 to old ns http://schemas.android.com/sdk/android/repo/sys-img2/01
+Warning: Mapping new ns http://schemas.android.com/repository/android/common/02 to old ns http://schemas.android.com/repository/android/common/01
+Warning: Mapping new ns http://schemas.android.com/repository/android/generic/02 to old ns http://schemas.android.com/repository/android/generic/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/addon2/02 to old ns http://schemas.android.com/sdk/android/repo/addon2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/addon2/03 to old ns http://schemas.android.com/sdk/android/repo/addon2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/repository2/02 to old ns http://schemas.android.com/sdk/android/repo/repository2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/repository2/03 to old ns http://schemas.android.com/sdk/android/repo/repository2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/sys-img2/03 to old ns http://schemas.android.com/sdk/android/repo/sys-img2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/sys-img2/02 to old ns http://schemas.android.com/sdk/android/repo/sys-img2/01
+e: /home/oliveren/.pub-cache/hosted/pub.dev/jitsi_meet-4.0.0/android/src/main/kotlin/com/gunschu/jitsi_meet/JitsiMeetPlugin.kt: (66, 42): Type mismatch: inferred type is Activity? but Activity was expected
+
+
+
+
+

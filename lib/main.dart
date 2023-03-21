@@ -1,11 +1,13 @@
 import 'package:crosspat/responsive/mobile_screen_layout.dart';
 import 'package:crosspat/responsive/responsive_layout_screen.dart';
 import 'package:crosspat/responsive/web_screen_layout.dart';
+import 'package:crosspat/screens/home_screen.dart';
 import 'package:crosspat/screens/login_screens.dart';
 import 'package:crosspat/utils/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
+import 'package:crosspat/resources/auth_methods.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -28,9 +30,25 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: backgroundColor,
       ),
       routes: {
-        'login': (context) => const LoginScreen(),
-      },
-      home: LoginScreen(),
+        '/login': (context) => const LoginScreen(),
+        '/home': (context) => const HomeScreen(),
+      }, // routes
+      home: StreamBuilder(
+        stream: AuthMethods().authChanges,
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const Center(
+              child: CircularProgressIndicator(),
+            );
+          }
+
+          if (snapshot.hasData) {
+            return const HomeScreen();
+          } else {
+            return const LoginScreen();
+          }
+        },
+      ),
     );
-  }
-}
+  } // build
+} //  MyApp
